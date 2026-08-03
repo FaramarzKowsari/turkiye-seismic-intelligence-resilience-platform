@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -e ".[dev,app]"
+      - name: Generate deterministic demo data
+        run: python scripts/generate_demo.py
+      - name: Run pytest
+        run: pytest
+      - name: Run Ruff
+        run: ruff check .
+      - name: Release audit
+        run: python scripts/release_audit.py

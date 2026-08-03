@@ -1,0 +1,9 @@
+{
+  "name": "Türkiye Seismic Intelligence & Resilience Platform",
+  "short_name": "DepremNabız AI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0866c6",
+  "description": "Open-source earthquake analytics and resilience intelligence for Türkiye."
+}

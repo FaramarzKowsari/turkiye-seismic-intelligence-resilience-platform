@@ -1,0 +1,35 @@
+{
+  "title": "Türkiye Seismic Intelligence & Resilience Platform",
+  "description": "An open-source research-software platform for earthquake-event ingestion, data-quality control, spatiotemporal analytics, seismicity anomaly screening, Sentinel-1 acquisition discovery, deformation-product exploration, urban exposure analysis, interactive visualisation, APIs and reproducible exports focused on Türkiye.",
+  "creators": [
+    {
+      "name": "Kowsari, Faramarz",
+      "orcid": "0000-0003-1692-0453",
+      "affiliation": "Independent Researcher, Istanbul, Türkiye"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "keywords": [
+    "earthquake analytics",
+    "Türkiye",
+    "seismology",
+    "disaster resilience",
+    "GeoAI",
+    "Sentinel-1",
+    "urban exposure",
+    "time series",
+    "anomaly detection",
+    "Streamlit",
+    "FastAPI",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "communities": []
+}

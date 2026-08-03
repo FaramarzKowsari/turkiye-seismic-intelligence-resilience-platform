@@ -1,0 +1,11 @@
+# Türkiye Seismic Intelligence & Resilience Platform
+
+DepremNabız AI is open research software for earthquake catalogue analytics, Sentinel-1 acquisition
+discovery, processed deformation-point exploration and urban exposure screening focused on
+Türkiye. It does not predict earthquakes or provide official emergency guidance.
+
+Canonical project page:
+https://faramarzkowsari.github.io/turkiye-seismic-intelligence-resilience-platform/
+
+Source:
+https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform

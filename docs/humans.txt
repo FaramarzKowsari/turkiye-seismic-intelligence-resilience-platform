@@ -1,0 +1,6 @@
+Project: Türkiye Seismic Intelligence & Resilience Platform
+Product: DepremNabız AI
+Author: Faramarz Kowsari
+ORCID: 0000-0003-1692-0453
+Website: https://faramarzkowsari.github.io
+Language: English, Turkish
