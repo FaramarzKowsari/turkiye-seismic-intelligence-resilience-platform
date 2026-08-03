@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import numpy as np
@@ -11,7 +11,7 @@ OUTPUT = ROOT / "data" / "demo"
 OUTPUT.mkdir(parents=True, exist_ok=True)
 
 rng = np.random.default_rng(20260803)
-start = datetime.now(timezone.utc) - timedelta(days=120)
+start = datetime.now(UTC) - timedelta(days=120)
 centres = [
     (40.85, 29.25, "Marmara synthetic cluster"),
     (38.45, 27.25, "Aegean synthetic cluster"),

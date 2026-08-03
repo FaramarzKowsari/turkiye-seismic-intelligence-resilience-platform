@@ -1,0 +1,13 @@
+Türkiye Seismic Intelligence & Resilience Platform — CI and Pages Patch
+
+Copy every file and folder in this patch into the root of the local repository,
+allowing Windows to replace files with the same names.
+
+Then in GitHub Desktop:
+Summary: fix: stabilize CI and GitHub Pages deployment
+Commit to main
+Push origin
+
+After pushing, configure GitHub Pages:
+Repository > Settings > Pages > Build and deployment > Source > GitHub Actions
+Then open Actions > Deploy GitHub Pages > Run workflow > Run workflow.

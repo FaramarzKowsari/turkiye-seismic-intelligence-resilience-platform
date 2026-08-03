@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 import pandas as pd
 import requests
@@ -16,7 +16,7 @@ def fetch_events(
     timeout: int = 30,
 ) -> pd.DataFrame:
     """Fetch GeoJSON events from the official USGS FDSN service for Türkiye's bounding box."""
-    end = datetime.now(timezone.utc)
+    end = datetime.now(UTC)
     start = end - timedelta(days=days)
     params = {
         "format": "geojson",
