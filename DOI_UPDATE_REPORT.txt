@@ -1,0 +1,25 @@
+Zenodo DOI update report
+========================
+
+Repository: C:\Faramarz\GitHub\13-quake\turkiye-seismic-intelligence-resilience-platform-v1.0.0\turkiye-seismic-intelligence-resilience-platform
+DOI: 10.5281/zenodo.21797833
+DOI URL: https://doi.org/10.5281/zenodo.21797833
+Backup folder: C:\Faramarz\GitHub\13-quake\turkiye-seismic-intelligence-resilience-platform-v1.0.0\turkiye-seismic-intelligence-resilience-platform\.doi-backup-20260804-154427
+
+Changed files:
+- CITATION.cff
+- README.md
+- docs/index.html
+- docs/RELEASE_AND_ZENODO.md
+
+Validation:
+- PASS: CITATION.cff DOI
+- PASS: README DOI link
+- PASS: README Zenodo badge
+- PASS: Website citation_doi meta
+- PASS: Website cite-as link
+- PASS: Website Schema.org identifier
+- PASS: Release guide DOI
+
+Note:
+- .zenodo.json was intentionally not changed with a self-referential DOI.

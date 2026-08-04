@@ -11,9 +11,3 @@
 Recommended release title:
 
 `DepremNabız AI v1.0.0 — Public Research Software Release`
-
-## Published DOI
-
-- **Release:** `v1.0.0`
-- **Version DOI:** [10.5281/zenodo.21797833](https://doi.org/10.5281/zenodo.21797833)
-- **Zenodo record:** [https://doi.org/10.5281/zenodo.21797833](https://doi.org/10.5281/zenodo.21797833)

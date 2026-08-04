@@ -7,12 +7,6 @@
 
 <p align="center">
   <a href="https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://doi.org/10.5281/zenodo.21797833">
-    <img
-      alt="Zenodo DOI"
-      src="https://zenodo.org/badge/DOI/10.5281/zenodo.21797833.svg"
-    >
-  </a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-168D73.svg"></a>
   <img alt="Python 3.11+" src="https://img.shields.io/badge/Python-3.11%2B-3670A0.svg">
   <img alt="Data modes" src="https://img.shields.io/badge/Data-Demo%20%2B%20Live-f3b43f.svg">
@@ -188,9 +182,11 @@ Official profiles: [ORCID](https://orcid.org/0000-0003-1692-0453) ·
 
 ## Citation
 
-**Version DOI:** [10.5281/zenodo.21797833](https://doi.org/10.5281/zenodo.21797833)
+See [`CITATION.cff`](CITATION.cff). After the first Zenodo DOI is minted, run:
 
-Kowsari, Faramarz. **Türkiye Seismic Intelligence & Resilience Platform (DepremNabız AI), version 1.0.0**. Zenodo. [10.5281/zenodo.21797833](https://doi.org/10.5281/zenodo.21797833)
+```bash
+python scripts/apply_zenodo_doi.py 10.5281/zenodo.YOUR_ID
+```
 
 ## License
 
