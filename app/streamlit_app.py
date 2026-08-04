@@ -296,9 +296,9 @@ early warnings, certify buildings or estimate official casualties and losses.
 # ---------------------------------------------------------------------------
 
 st.divider()
-st.subheader("Project source / Proje kaynak kodu")
+st.subheader("Project source / Proje kaynak kodu / Código fuente del proyecto")
 
-source_en, source_tr = st.tabs(["English", "Türkçe"])
+source_en, source_tr, source_es = st.tabs(["English", "Türkçe", "Español"])
 
 with source_en:
     st.markdown(
@@ -334,6 +334,24 @@ turkiye-seismic-intelligence-resilience-platform
 """
     )
 
+with source_es:
+    st.markdown(
+        """
+Esta aplicación de Streamlit es la interfaz pública e interactiva del
+**Türkiye Seismic Intelligence & Resilience Platform — DepremNabız AI**.
+
+El código fuente completo, la canalización de datos, los módulos analíticos,
+las pruebas automatizadas, los flujos de trabajo de GitHub Actions,
+la documentación y los metadatos de las versiones se mantienen en el
+repositorio público de GitHub de **Faramarz Kowsari**.
+
+**Repositorio del código fuente**
+
+https://github.com/FaramarzKowsari/\
+turkiye-seismic-intelligence-resilience-platform
+"""
+    )
+
 source_buttons = st.columns(2)
 
 source_buttons[0].link_button(
@@ -360,7 +378,7 @@ source_buttons[1].link_button(
 # ---------------------------------------------------------------------------
 
 st.divider()
-st.subheader("About the author / Yazar hakkında")
+st.subheader("About the author / Yazar hakkında / Sobre el autor")
 
 photo_column, biography_column = st.columns([1, 3])
 
@@ -372,7 +390,7 @@ with photo_column:
     )
 
 with biography_column:
-    bio_en, bio_tr = st.tabs(["English", "Türkçe"])
+    bio_en, bio_tr, bio_es = st.tabs(["English", "Türkçe", "Español"])
 
     with bio_en:
         st.markdown(
@@ -414,10 +432,31 @@ Yazarlığın yanı sıra web tabanlı eğitim araçları geliştirir ve uzmanla
 """
         )
 
+    with bio_es:
+        st.markdown(
+            """
+### Faramarz Kowsari
+
+**Autor · Ingeniero de Software · Investigador en Inteligencia Artificial**
+
+Faramarz Kowsari es autor, ingeniero de software e investigador en Inteligencia
+Artificial con base en Estambul. Centrado en la intersección entre tecnología,
+educación y desarrollo personal, ha publicado más de 80 títulos digitales en
+plataformas internacionales.
+
+Sus áreas de especialización abarcan la Inteligencia Artificial, la ingeniería
+de prompts, las estrategias modernas de trading —incluidos Smart Money Concepts
+y el trading algorítmico—, así como la literatura clásica y la atención plena.
+
+Además de escribir, desarrolla herramientas educativas basadas en la web y crea
+contenido audiovisual formativo especializado.
+"""
+        )
+
 
 st.markdown(
     """
-#### Official profiles / Resmî profiller
+#### Official profiles / Resmî profiller / Perfiles oficiales
 
 [ORCID](https://orcid.org/0000-0003-1692-0453) ·
 [Google Scholar](https://scholar.google.com/citations?user=G7tP5WMAAAAJ&hl=en) ·
