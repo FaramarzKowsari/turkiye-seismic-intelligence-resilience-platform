@@ -9,8 +9,20 @@
 
 <h1 align="center">Türkiye Seismic Intelligence &amp; Resilience Platform</h1>
 
-
 <p align="center">
+<<<<<<< HEAD
+  <a href="https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://doi.org/10.5281/zenodo.21797833">
+    <img
+      alt="Zenodo DOI"
+      src="https://zenodo.org/badge/DOI/10.5281/zenodo.21797833.svg"
+    >
+  </a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-168D73.svg"></a>
+  <img alt="Python 3.11+" src="https://img.shields.io/badge/Python-3.11%2B-3670A0.svg">
+  <img alt="Data modes" src="https://img.shields.io/badge/Data-Demo%20%2B%20Live-f3b43f.svg">
+  <img alt="Safety" src="https://img.shields.io/badge/Safety-No%20prediction-critical.svg">
+=======
   <strong>DepremNabız AI</strong><br>
   Open-Source Earthquake Analytics, Satellite Deformation Monitoring and
   Urban Exposure Intelligence for Türkiye
@@ -27,12 +39,6 @@
     <img
       alt="Launch Live App"
       src="https://img.shields.io/badge/Launch-Live%20App-FF4B4B?logo=streamlit&logoColor=white"
-    >
-  </a>
-  <a href="https://doi.org/10.5281/zenodo.21797833">
-    <img
-      alt="Zenodo DOI"
-      src="https://zenodo.org/badge/DOI/10.5281/zenodo.21797833.svg"
     >
   </a>
   <a href="LICENSE">
@@ -57,7 +63,9 @@
     alt="Responsible analytics"
     src="https://img.shields.io/badge/Safety-No%20Earthquake%20Prediction-critical.svg"
   >
+>>>>>>> 476e000d9227549fc3dcd20b064e4a5556ddb826
 </p>
+
 <p align="center">
   <a href="#english">English</a> ·
   <a href="#türkçe">Türkçe</a> ·
@@ -537,7 +545,9 @@ Official profiles:
 
 ## Citation and preservation
 
+<<<<<<< HEAD
 **Version DOI:** [10.5281/zenodo.21797833](https://doi.org/10.5281/zenodo.21797833)
+=======
 Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
 
 Until the first GitHub release is archived by Zenodo, cite the software as:
@@ -549,6 +559,7 @@ https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platf
 ```
 
 After Zenodo creates the first version DOI, update the citation metadata with:
+>>>>>>> 476e000d9227549fc3dcd20b064e4a5556ddb826
 
 Kowsari, Faramarz. **Türkiye Seismic Intelligence & Resilience Platform (DepremNabız AI), version 1.0.0**. Zenodo. [10.5281/zenodo.21797833](https://doi.org/10.5281/zenodo.21797833)
 
