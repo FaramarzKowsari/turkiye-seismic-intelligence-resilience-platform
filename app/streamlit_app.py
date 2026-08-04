@@ -273,17 +273,163 @@ with methods_tab:
         """
 ### Interpretation rules
 
-- **Anomaly** means a statistical deviation in the loaded catalogue, not a forecast of a future event.
+- **Anomaly** means a statistical deviation in the loaded catalogue,
+  not a forecast of a future event.
 - **b-value** depends on magnitude completeness and catalogue selection.
 - **Clusters** are exploratory groups controlled by DBSCAN parameters.
-- **Exposure** counts nearby user-supplied points; it is not vulnerability or loss.
-- **Satellite discovery** builds acquisition manifests; deformation processing belongs in a
-  validated SNAP, ISCE or MintPy workflow.
+- **Exposure** counts nearby user-supplied points; it is not vulnerability,
+  damage or loss.
+- **Satellite discovery** builds acquisition manifests. Deformation processing
+  belongs in a validated SNAP, ISCE, GMTSAR or MintPy workflow.
 
-### Author
+### Scientific and operational limits
 
-**Faramarz Kowsari** — Author, Software Engineer and AI Researcher based in Istanbul.  
-ORCID: https://orcid.org/0000-0003-1692-0453  
-GitHub: https://github.com/FaramarzKowsari
+This platform is designed for research, education, exploratory analysis and
+decision-support prototyping. It does not predict earthquakes, issue official
+early warnings, certify buildings or estimate official casualties and losses.
 """
     )
+
+
+# ---------------------------------------------------------------------------
+# Project source
+# ---------------------------------------------------------------------------
+
+st.divider()
+st.subheader("Project source / Proje kaynak kodu")
+
+source_en, source_tr = st.tabs(["English", "Türkçe"])
+
+with source_en:
+    st.markdown(
+        """
+This Streamlit application is the public interactive interface of the
+**Türkiye Seismic Intelligence & Resilience Platform — DepremNabız AI**.
+
+The complete source code, data pipeline, analytical modules, automated tests,
+GitHub Actions workflows, documentation and release metadata are maintained in
+the public GitHub repository of **Faramarz Kowsari**.
+
+**Source repository**
+
+https://github.com/FaramarzKowsari/\
+turkiye-seismic-intelligence-resilience-platform
+"""
+    )
+
+with source_tr:
+    st.markdown(
+        """
+Bu Streamlit uygulaması, **Türkiye Seismic Intelligence & Resilience Platform —
+DepremNabız AI** projesinin halka açık etkileşimli arayüzüdür.
+
+Projenin kaynak kodu, veri hattı, analitik modülleri, otomatik testleri,
+GitHub Actions iş akışları, dokümantasyonu ve sürüm metadatası
+**Faramarz Kowsari** GitHub hesabındaki halka açık depoda yayımlanmaktadır.
+
+**Kaynak kod deposu**
+
+https://github.com/FaramarzKowsari/\
+turkiye-seismic-intelligence-resilience-platform
+"""
+    )
+
+source_buttons = st.columns(2)
+
+source_buttons[0].link_button(
+    "Open GitHub source repository",
+    (
+        "https://github.com/FaramarzKowsari/"
+        "turkiye-seismic-intelligence-resilience-platform"
+    ),
+    width="stretch",
+)
+
+source_buttons[1].link_button(
+    "Open project website",
+    (
+        "https://faramarzkowsari.github.io/"
+        "turkiye-seismic-intelligence-resilience-platform/"
+    ),
+    width="stretch",
+)
+
+
+# ---------------------------------------------------------------------------
+# Author
+# ---------------------------------------------------------------------------
+
+st.divider()
+st.subheader("About the author / Yazar hakkında")
+
+photo_column, biography_column = st.columns([1, 3])
+
+with photo_column:
+    st.image(
+        "https://avatars.githubusercontent.com/u/105053743?v=4&s=512",
+        caption="Faramarz Kowsari",
+        width=190,
+    )
+
+with biography_column:
+    bio_en, bio_tr = st.tabs(["English", "Türkçe"])
+
+    with bio_en:
+        st.markdown(
+            """
+### Faramarz Kowsari
+
+**Author · Software Engineer · AI Researcher**
+
+Faramarz Kowsari is an author, Software Engineer and AI researcher based in
+Istanbul. Focusing on the intersection of technology, education, and personal
+growth, he has published over 80 digital titles on international platforms.
+
+His areas of expertise span Artificial Intelligence, prompt engineering,
+modern trading strategies — including Smart Money Concepts and algorithmic
+trading — as well as classical literature and mindfulness.
+
+In addition to writing, he develops web-based educational tools and creates
+specialized instructional video content.
+"""
+        )
+
+    with bio_tr:
+        st.markdown(
+            """
+### Faramarz Kowsari
+
+**Yazar · Yazılım Mühendisi · Yapay Zekâ Araştırmacısı**
+
+Faramarz Kowsari, İstanbul merkezli bir yazar, Yazılım Mühendisi ve
+Yapay Zekâ araştırmacısıdır. Teknoloji, eğitim ve kişisel gelişimin kesişimine
+odaklanarak uluslararası platformlarda 80'den fazla dijital eser yayımlamıştır.
+
+Uzmanlık alanları Yapay Zekâ, prompt mühendisliği, modern işlem stratejileri —
+Smart Money Concepts ve algoritmik işlem dâhil — klasik edebiyat ve farkındalık
+çalışmalarını kapsar.
+
+Yazarlığın yanı sıra web tabanlı eğitim araçları geliştirir ve uzmanlaşmış
+öğretici video içerikleri üretir.
+"""
+        )
+
+
+st.markdown(
+    """
+#### Official profiles / Resmî profiller
+
+[ORCID](https://orcid.org/0000-0003-1692-0453) ·
+[Google Scholar](https://scholar.google.com/citations?user=G7tP5WMAAAAJ&hl=en) ·
+[GitHub](https://github.com/FaramarzKowsari) ·
+[LinkedIn](https://www.linkedin.com/in/faramarzkowsari) ·
+[Google Books](https://play.google.com/store/search?q=Faramarz_Kowsari&c=books) ·
+[Official Website](https://faramarzkowsari.github.io) ·
+[Zenodo Records](https://zenodo.org/search?q=creators.orcid%3A%220000-0003-1692-0453%22)
+"""
+)
+
+st.caption(
+    "Türkiye Seismic Intelligence & Resilience Platform · "
+    "DepremNabız AI · Created and maintained by Faramarz Kowsari"
+)
