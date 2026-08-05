@@ -9,7 +9,6 @@
 
 <h1 align="center">Türkiye Seismic Intelligence &amp; Resilience Platform</h1>
 
-
 <p align="center">
   <strong>DepremNabız AI</strong><br>
   Open-Source Earthquake Analytics, Satellite Deformation Monitoring and
@@ -31,8 +30,8 @@
   </a>
   <a href="https://doi.org/10.5281/zenodo.21797833">
     <img
-      alt="Zenodo DOI"
-      src="https://zenodo.org/badge/DOI/10.5281/zenodo.21797833.svg"
+      alt="DOI: 10.5281/zenodo.21797833"
+      src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21797833-168D73.svg"
     >
   </a>
   <a href="LICENSE">
@@ -58,13 +57,14 @@
     src="https://img.shields.io/badge/Safety-No%20Earthquake%20Prediction-critical.svg"
   >
 </p>
+
 <p align="center">
   <a href="#english">English</a> ·
   <a href="#türkçe">Türkçe</a> ·
   <a href="https://depremnabiz-turkiye.streamlit.app">Interactive App</a> ·
   <a href="https://faramarzkowsari.github.io/turkiye-seismic-intelligence-resilience-platform/">Project Website</a> ·
   <a href="https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform">Source Repository</a> ·
-  <a href="docs/RELEASE_AND_ZENODO.md">Release &amp; DOI</a>
+  <a href="https://doi.org/10.5281/zenodo.21797833">Release DOI</a>
 </p>
 
 > **Safety boundary:** This platform performs research analytics, catalogue exploration,
@@ -84,9 +84,13 @@
 catalogues, satellite-acquisition metadata and user-supplied geospatial inputs into transparent,
 auditable and reproducible analytical products.
 
-The platform combines:
+The platform is designed for research, education, reproducible experimentation, public-sector
+prototyping and technical portfolio development. It combines live public data, clearly labelled
+synthetic demonstration data and local user-supplied files without requiring a paid AI API.
 
-- Near-real-time earthquake catalogue analytics for Türkiye
+## Core capabilities
+
+- Near-real-time earthquake-catalogue analytics for Türkiye
 - Reproducible synthetic demonstration data
 - Local CSV and Excel catalogue ingestion
 - Data cleaning, schema normalisation and quality reporting
@@ -96,15 +100,13 @@ The platform combines:
 - DBSCAN-based spatial-cluster exploration
 - Radius-based urban exposure screening
 - Sentinel-1 acquisition discovery through Copernicus STAC
-- Same-orbit satellite pair planning
+- Same-orbit satellite acquisition-pair planning
 - Processed InSAR displacement-point exploration
 - Interactive Streamlit reporting
 - Read-only FastAPI access
-- CSV, Excel, Parquet and GeoJSON-compatible outputs
-- Automated tests, CI, release validation and DOI-ready metadata
-
-The software is designed for research, education, reproducible experimentation, public-sector
-prototyping and technical portfolio development.
+- CSV, Excel, Parquet and GeoJSON-compatible exports
+- Automated tests, continuous integration and release validation
+- Citation metadata and Zenodo preservation
 
 ## Live online reporting
 
@@ -230,7 +232,7 @@ The web application does not calculate ground displacement directly from raw Sen
 Validated InSAR processing should be completed through specialist workflows such as SNAP, ISCE,
 GMTSAR or MintPy before processed displacement points are uploaded.
 
-## Data quality
+## Data quality and provenance
 
 The platform reports catalogue-level quality indicators, including:
 
@@ -246,6 +248,9 @@ The platform reports catalogue-level quality indicators, including:
 These checks describe the loaded data structure. They do not independently validate sensor
 calibration, magnitude accuracy, network completeness or the scientific interpretation supplied
 by the original provider.
+
+Each workflow should retain the original provider, retrieval time, query settings and transformation
+steps required to interpret or reproduce the result.
 
 ## Architecture
 
@@ -269,19 +274,22 @@ GitHub Actions · GitHub Pages · Zenodo**
 
 ## Quick start
 
+Clone the repository and create a virtual environment:
+
 ```bash
 git clone https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform.git
-
 cd turkiye-seismic-intelligence-resilience-platform
-
 python -m venv .venv
 ```
 
 Activate the environment:
 
 ```bash
-# Windows
-.venv\Scripts\activate
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+
+# Windows Command Prompt
+.venv\Scripts\activate.bat
 
 # macOS / Linux
 source .venv/bin/activate
@@ -319,19 +327,44 @@ ruff check .
 python scripts/release_audit.py
 ```
 
+## API access
+
+The read-only FastAPI service can be started locally with:
+
+```bash
+uvicorn depremnabiz.api:app --host 0.0.0.0 --port 8000
+```
+
+After startup, interactive API documentation is normally available at:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+## Export formats
+
+Depending on the selected workflow, analytical results can be exported in formats suitable for:
+
+- CSV-based review and exchange
+- Excel-based reporting
+- Parquet analytical pipelines
+- GeoJSON-compatible GIS workflows
+- Power BI and Tableau ingestion
+- Reproducible Python analysis
+
 ## Public access
 
-**Interactive application**
-
+**Interactive application**  
 https://depremnabiz-turkiye.streamlit.app
 
-**Project website**
-
+**Project website**  
 https://faramarzkowsari.github.io/turkiye-seismic-intelligence-resilience-platform/
 
-**Source repository**
-
+**Source repository**  
 https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform
+
+**Version DOI**  
+https://doi.org/10.5281/zenodo.21797833
 
 ## Data-source references
 
@@ -341,6 +374,20 @@ https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platf
 
 External datasets remain subject to their original provider terms, licences, access limits and
 attribution requirements.
+
+## Responsible-use boundary
+
+This software is intended for research analytics, educational use, reproducible experimentation
+and decision-support prototyping.
+
+It does **not**:
+
+- Predict earthquakes
+- Provide earthquake early warning
+- Certify buildings or infrastructure
+- Replace structural or geotechnical engineering assessments
+- Produce official casualty, damage or economic-loss estimates
+- Replace AFAD, USGS, local authorities or emergency-management institutions
 
 ---
 
@@ -354,7 +401,12 @@ attribution requirements.
 mekânsal girdileri şeffaf, denetlenebilir ve tekrar üretilebilir analitik ürünlere dönüştüren açık
 kaynaklı bir araştırma yazılımıdır.
 
-Platform aşağıdaki bileşenleri bir araya getirir:
+Platform; araştırma, eğitim, tekrar üretilebilir deneyler, kamu sektörü prototipleri ve teknik
+portföy geliştirme amacıyla tasarlanmıştır. Canlı kamu verilerini, açıkça etiketlenmiş sentetik demo
+verilerini ve kullanıcı tarafından sağlanan yerel dosyaları ücretli bir yapay zekâ API'sine ihtiyaç
+duymadan bir araya getirir.
+
+## Temel yetenekler
 
 - Türkiye için gerçek zamanlıya yakın deprem katalog analitiği
 - Tekrar üretilebilir sentetik demo verileri
@@ -371,7 +423,8 @@ Platform aşağıdaki bileşenleri bir araya getirir:
 - Etkileşimli Streamlit raporlaması
 - Salt okunur FastAPI hizmeti
 - CSV, Excel, Parquet ve GeoJSON uyumlu çıktılar
-- Otomatik testler, CI, sürüm doğrulaması ve DOI uyumlu metadata
+- Otomatik testler, sürekli entegrasyon ve sürüm doğrulaması
+- Atıf metadatası ve Zenodo arşivlemesi
 
 ## Canlı çevrim içi raporlama
 
@@ -407,7 +460,7 @@ Ardından şu göstergeleri hesaplar ve görselleştirir:
 - Keşifsel mekânsal kümeler
 - Eksik ve yinelenen kayıt kontrolleri
 - Koordinat ve zaman damgası kalite göstergeleri
-- Filtrelenmiş katalog için CSV indirme
+- Filtrelenmiş katalog için indirilebilir veri
 
 Raporlama katmanı saniyelik gerçek zamanlı değildir; **gerçek zamanlıya yakın** çalışır. Sonuçların
 güncelliği, üst veri sağlayıcısının yayın sıklığına ve katalog yapısına bağlıdır.
@@ -432,6 +485,9 @@ Bu mod, halka açık uygulamada özel kullanıcı bilgisi gerektirmez.
 
 Kullanıcılar CSV veya Excel deprem kataloglarını yükleyebilir. Platform yaygın sütun adlarını
 normalleştirmeye ve verileri standart olay şemasına dönüştürmeye çalışır.
+
+Yerel dosyalar kullanıcının kendi veri haklarına, kalite kontrollerine ve atıf yükümlülüklerine
+tabidir.
 
 ## Katalog analitiği
 
@@ -489,13 +545,29 @@ Mevcut özellikler:
 Web uygulaması ham Sentinel-1 görüntülerinden doğrudan deplasman üretmez. Doğrulanmış InSAR
 işlemleri SNAP, ISCE, GMTSAR veya MintPy gibi uzman araçlarla tamamlanmalıdır.
 
+## Veri kalitesi ve kaynak bilgisi
+
+Platform şu katalog düzeyi kalite göstergelerini raporlar:
+
+- Kayıt sayısı
+- Eksik değerler
+- Yinelenen kimlikler veya zaman damgaları
+- Geçersiz koordinatlar
+- Geçersiz büyüklük veya derinlik değerleri
+- Zaman kapsamı
+- Kaynak etiketleri
+- En güncel kayıt
+
+Bu kontroller, yüklenen verinin yapısını açıklar. Sensör kalibrasyonunu, büyüklük doğruluğunu, ağ
+eksiksizliğini veya sağlayıcının bilimsel yorumunu bağımsız olarak doğrulamaz.
+
 ## Bilimsel ve etik sınırlar
 
 Platform:
 
 - Deprem tahmini yapmaz
 - Erken uyarı hizmeti sunmaz
-- Bina güvenliği sertifikası vermez
+- Bina veya altyapı güvenliği sertifikası vermez
 - Hasar, can kaybı veya ekonomik kayıp tahmini yapmaz
 - Resmî kurum açıklamalarının yerine geçmez
 - Acil durum müdahale sistemi olarak kullanılmamalıdır
@@ -516,14 +588,48 @@ tests/               automated behavioural and metadata tests
 .github/workflows/   CI, Pages, live snapshot and release validation
 ```
 
+## Release and DOI
+
+- **Version:** `1.0.0`
+- **Release tag:** `v1.0.0`
+- **Release date:** `2026-08-03`
+- **Version DOI:** [`10.5281/zenodo.21797833`](https://doi.org/10.5281/zenodo.21797833)
+- **Licence:** MIT
+- **Primary language:** Python 3.11+
+
+## Citation
+
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
+
+Recommended citation:
+
+```text
+Kowsari, Faramarz. Türkiye Seismic Intelligence & Resilience Platform
+(DepremNabız AI), version 1.0.0. Zenodo, 2026.
+https://doi.org/10.5281/zenodo.21797833
+```
+
+BibTeX:
+
+```bibtex
+@software{kowsari_2026_depremnabiz,
+  author  = {Kowsari, Faramarz},
+  title   = {Türkiye Seismic Intelligence & Resilience Platform (DepremNabız AI)},
+  version = {1.0.0},
+  year    = {2026},
+  doi     = {10.5281/zenodo.21797833},
+  url     = {https://doi.org/10.5281/zenodo.21797833}
+}
+```
+
 ## Author
 
 **Faramarz Kowsari** is an author, Software Engineer and AI researcher based in Istanbul.
-Focusing on the intersection of technology, education, and personal growth, he has published
-over 80 digital titles on international platforms. His areas of expertise span Artificial
-Intelligence, prompt engineering, modern trading strategies (Smart Money Concepts & algorithmic
-trading), as well as classical literature and mindfulness. In addition to writing, he develops
-web-based educational tools and creates specialized instructional video content.
+Focusing on the intersection of technology, education and personal growth, he has published over
+80 digital titles on international platforms. His areas of expertise span Artificial Intelligence,
+prompt engineering, modern trading strategies, classical literature and mindfulness. In addition
+to writing, he develops web-based educational tools and creates specialised instructional video
+content.
 
 Official profiles:
 
@@ -534,25 +640,6 @@ Official profiles:
 [Google Books](https://play.google.com/store/search?q=Faramarz_Kowsari&c=books) ·
 [Official Website](https://faramarzkowsari.github.io) ·
 [Zenodo Records](https://zenodo.org/search?q=creators.orcid%3A%220000-0003-1692-0453%22&l=list&p=1&s=10&sort=bestmatch)
-
-## Citation and preservation
-
-**Version DOI:** [10.5281/zenodo.21797833](https://doi.org/10.5281/zenodo.21797833)
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
-
-Until the first GitHub release is archived by Zenodo, cite the software as:
-
-```text
-Kowsari, Faramarz. Türkiye Seismic Intelligence & Resilience Platform:
-DepremNabız AI, Version 1.0.0. GitHub, 2026.
-https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform
-```
-
-After Zenodo creates the first version DOI, update the citation metadata with:
-
-Kowsari, Faramarz. **Türkiye Seismic Intelligence & Resilience Platform (DepremNabız AI), version 1.0.0**. Zenodo. [10.5281/zenodo.21797833](https://doi.org/10.5281/zenodo.21797833)
-
-The repository badge should remain linked to the Concept DOI after the first DOI is minted.
 
 ## Licence
 
