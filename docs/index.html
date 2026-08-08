@@ -13,13 +13,17 @@
 
   <meta name="author" content="Faramarz Kowsari">
   <meta name="theme-color" content="#0866c6">
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta
+    name="robots"
+    content="index,follow,max-image-preview:large,max-snippet:-1"
+  >
 
   <meta
     name="keywords"
     content="Türkiye earthquake analytics, seismic intelligence, DepremNabız AI, USGS earthquake API, Sentinel-1, InSAR, urban exposure, GeoAI, disaster resilience, Streamlit, FastAPI, open-source research software"
   >
 
+  <!-- Scientific citation metadata -->
   <meta
     name="citation_title"
     content="Türkiye Seismic Intelligence & Resilience Platform"
@@ -27,14 +31,26 @@
   <meta name="citation_author" content="Faramarz Kowsari">
   <meta name="citation_publication_date" content="2026/08/03">
   <meta name="citation_doi" content="10.5281/zenodo.21797833">
+
+  <!-- Canonical + DOI -->
   <link
     rel="canonical"
     href="https://faramarzkowsari.github.io/turkiye-seismic-intelligence-resilience-platform/"
   >
-  <link rel="cite-as" href="https://doi.org/10.5281/zenodo.21797833">
-<link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <link
+    rel="cite-as"
+    href="https://doi.org/10.5281/zenodo.21797833"
+  >
+
+  <link
+    rel="sitemap"
+    type="application/xml"
+    href="sitemap.xml"
+  >
+
   <link rel="stylesheet" href="assets/style.css">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta
     property="og:title"
@@ -55,6 +71,7 @@
   <meta property="og:image:alt" content="Faramarz Kowsari">
   <meta property="og:site_name" content="DepremNabız AI">
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta
     name="twitter:title"
@@ -69,6 +86,7 @@
     content="https://avatars.githubusercontent.com/u/105053743?v=4&s=512"
   >
 
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -89,6 +107,11 @@
     "installUrl": "https://depremnabiz-turkiye.streamlit.app",
     "downloadUrl": "https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform",
     "codeRepository": "https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform",
+    "sameAs": [
+      "https://doi.org/10.5281/zenodo.21797833",
+      "https://depremnabiz-turkiye.streamlit.app",
+      "https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform"
+    ],
     "featureList": [
       "Live USGS earthquake catalogue analytics for Türkiye",
       "Reproducible synthetic demonstration data",
@@ -119,23 +142,38 @@
         "https://github.com/FaramarzKowsari",
         "https://www.linkedin.com/in/faramarzkowsari"
       ]
-    },
-    "sameAs": [
-      "https://depremnabiz-turkiye.streamlit.app",
-      "https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform"
-    ]
+    }
   }
   </script>
 </head>
 
 <body>
+
+  <!-- Header -->
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top">DepremNabız AI</a>
+
+      <a class="brand" href="#top">
+        DepremNabız AI
+      </a>
 
       <nav aria-label="Primary navigation">
-        <button class="lang active" data-lang="en" type="button">English</button>
-        <button class="lang" data-lang="tr" type="button">Türkçe</button>
+
+        <button
+          class="lang active"
+          data-lang="en"
+          type="button"
+        >
+          English
+        </button>
+
+        <button
+          class="lang"
+          data-lang="tr"
+          type="button"
+        >
+          Türkçe
+        </button>
 
         <a
           href="https://depremnabiz-turkiye.streamlit.app"
@@ -143,30 +181,52 @@
           rel="noopener"
           data-en="Live App"
           data-tr="Canlı Uygulama"
-        >Live App</a>
+        >
+          Live App
+        </a>
+
+        <a
+          href="https://doi.org/10.5281/zenodo.21797833"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-doi"
+        >
+          DOI
+        </a>
 
         <a
           href="https://github.com/FaramarzKowsari/turkiye-seismic-intelligence-resilience-platform"
           target="_blank"
           rel="noopener"
-        >GitHub</a>
+        >
+          GitHub
+        </a>
+
       </nav>
     </div>
   </header>
 
   <main id="top">
+
+    <!-- Hero -->
     <section class="hero wrap">
+
       <div class="hero-copy">
+
         <p
           class="eyebrow"
           data-en="OPEN RESEARCH SOFTWARE FOR TÜRKİYE"
           data-tr="TÜRKİYE İÇİN AÇIK ARAŞTIRMA YAZILIMI"
-        >OPEN RESEARCH SOFTWARE FOR TÜRKİYE</p>
+        >
+          OPEN RESEARCH SOFTWARE FOR TÜRKİYE
+        </p>
 
         <h1
           data-en="Türkiye Seismic Intelligence & Resilience Platform"
           data-tr="Türkiye Sismik Zekâ ve Dayanıklılık Platformu"
-        >Türkiye Seismic Intelligence & Resilience Platform</h1>
+        >
+          Türkiye Seismic Intelligence & Resilience Platform
+        </h1>
 
         <p
           class="lead"
@@ -179,6 +239,7 @@
         </p>
 
         <div class="actions">
+
           <a
             class="button primary"
             href="https://depremnabiz-turkiye.streamlit.app"
@@ -186,7 +247,9 @@
             rel="noopener"
             data-en="Launch Interactive App"
             data-tr="Canlı Uygulamayı Aç"
-          >Launch Interactive App</a>
+          >
+            Launch Interactive App
+          </a>
 
           <a
             class="button secondary"
@@ -195,7 +258,9 @@
             rel="noopener"
             data-en="View Source"
             data-tr="Kaynak Kodu Gör"
-          >View Source</a>
+          >
+            View Source
+          </a>
 
           <a
             class="button secondary"
@@ -204,15 +269,94 @@
             rel="noopener"
             data-en="Read Documentation"
             data-tr="Dokümantasyonu Aç"
-          >Read Documentation</a>
+          >
+            Read Documentation
+          </a>
+
+          <a
+            class="button doi-button"
+            href="https://doi.org/10.5281/zenodo.21797833"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-en="DOI & Citation"
+            data-tr="DOI ve Atıf"
+          >
+            DOI &amp; Citation
+          </a>
+
         </div>
+
+        <!-- Visible DOI -->
+        <div class="doi-panel">
+
+          <div class="doi-panel-text">
+
+            <span
+              class="doi-kicker"
+              data-en="ARCHIVED RESEARCH SOFTWARE"
+              data-tr="ARŞİVLENMİŞ ARAŞTIRMA YAZILIMI"
+            >
+              ARCHIVED RESEARCH SOFTWARE
+            </span>
+
+            <span
+              class="doi-label"
+              data-en="Version DOI"
+              data-tr="Sürüm DOI"
+            >
+              Version DOI
+            </span>
+
+            <a
+              class="doi-value"
+              href="https://doi.org/10.5281/zenodo.21797833"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              10.5281/zenodo.21797833
+            </a>
+
+            <span
+              class="doi-note"
+              data-en="Permanent scholarly record preserved by Zenodo."
+              data-tr="Zenodo tarafından korunan kalıcı bilimsel kayıt."
+            >
+              Permanent scholarly record preserved by Zenodo.
+            </span>
+
+          </div>
+
+          <a
+            class="doi-badge"
+            href="https://doi.org/10.5281/zenodo.21797833"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Zenodo DOI 10.5281/zenodo.21797833"
+          >
+            <img
+              src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21797833-168D73.svg"
+              alt="DOI 10.5281/zenodo.21797833"
+            >
+          </a>
+
+        </div>
+
       </div>
 
-      <div class="seismic-card" aria-label="Stylised seismic analytics chart">
+      <!-- Seismic visual -->
+      <div
+        class="seismic-card"
+        aria-label="Stylised seismic analytics chart"
+      >
+
         <div class="pulse"></div>
         <div class="pulse delayed"></div>
 
-        <svg viewBox="0 0 600 220" role="img" aria-label="Seismic waveform">
+        <svg
+          viewBox="0 0 600 220"
+          role="img"
+          aria-label="Seismic waveform"
+        >
           <polyline
             points="0,110 70,110 90,100 108,126 126,70 144,170 162,28 180,196 198,78 216,126 240,105 290,110 320,94 350,124 382,108 430,110 470,100 500,116 530,110 600,110"
           />
@@ -224,32 +368,109 @@
         >
           Catalogue → quality → analytics → exposure → satellite → reporting
         </p>
+
       </div>
+
     </section>
 
+    <!-- DOI / release card -->
+    <section class="wrap release-card">
+
+      <div class="release-main">
+
+        <p
+          class="eyebrow"
+          data-en="CITABLE RESEARCH SOFTWARE"
+          data-tr="ATIF YAPILABİLİR ARAŞTIRMA YAZILIMI"
+        >
+          CITABLE RESEARCH SOFTWARE
+        </p>
+
+        <h2
+          data-en="Version 1.0.0 preserved with a permanent DOI"
+          data-tr="Sürüm 1.0.0 kalıcı DOI ile arşivlendi"
+        >
+          Version 1.0.0 preserved with a permanent DOI
+        </h2>
+
+        <p
+          data-en="The public research-software release is archived through Zenodo and can be cited independently of the GitHub repository."
+          data-tr="Halka açık araştırma yazılımı sürümü Zenodo üzerinden arşivlenmiştir ve GitHub deposundan bağımsız olarak atıf yapılabilir."
+        >
+          The public research-software release is archived through Zenodo and
+          can be cited independently of the GitHub repository.
+        </p>
+
+      </div>
+
+      <div class="release-doi">
+
+        <span
+          data-en="VERSION DOI"
+          data-tr="SÜRÜM DOI"
+        >
+          VERSION DOI
+        </span>
+
+        <a
+          href="https://doi.org/10.5281/zenodo.21797833"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          10.5281/zenodo.21797833
+        </a>
+
+        <small>
+          v1.0.0 · 2026
+        </small>
+
+        <a
+          class="zenodo-link"
+          href="https://doi.org/10.5281/zenodo.21797833"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-en="Open Zenodo Record →"
+          data-tr="Zenodo Kaydını Aç →"
+        >
+          Open Zenodo Record →
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- Main features -->
     <section class="wrap grid features">
+
       <article>
         <span>01</span>
+
         <h2
           data-en="Live catalogue analytics"
           data-tr="Canlı katalog analitiği"
-        >Live catalogue analytics</h2>
+        >
+          Live catalogue analytics
+        </h2>
 
         <p
           data-en="Official public USGS queries for Türkiye, source labels, configurable lookback periods, minimum-magnitude filters and freshness timestamps."
           data-tr="Türkiye için resmî ve halka açık USGS sorguları, kaynak etiketleri, ayarlanabilir zaman aralığı, minimum büyüklük filtresi ve güncellik bilgisi."
         >
-          Official public USGS queries for Türkiye, source labels, configurable
-          lookback periods, minimum-magnitude filters and freshness timestamps.
+          Official public USGS queries for Türkiye, source labels,
+          configurable lookback periods, minimum-magnitude filters and
+          freshness timestamps.
         </p>
       </article>
 
       <article>
         <span>02</span>
+
         <h2
           data-en="Scientific screening"
           data-tr="Bilimsel tarama"
-        >Scientific screening</h2>
+        >
+          Scientific screening
+        </h2>
 
         <p
           data-en="Magnitude, depth, shallow-event share, b-value, rolling event-rate anomalies and spatial clustering with visible assumptions."
@@ -262,26 +483,33 @@
 
       <article>
         <span>03</span>
+
         <h2
           data-en="Urban exposure"
           data-tr="Kentsel maruziyet"
-        >Urban exposure</h2>
+        >
+          Urban exposure
+        </h2>
 
         <p
           data-en="Radius-based screening of user-supplied population, facility and infrastructure points without claiming damage, casualties or official loss."
           data-tr="Kullanıcı tarafından sağlanan nüfus, tesis ve altyapı noktalarıyla hasar, can kaybı veya resmî kayıp iddiası taşımayan yarıçap tabanlı tarama."
         >
           Radius-based screening of user-supplied population, facility and
-          infrastructure points without claiming damage, casualties or official loss.
+          infrastructure points without claiming damage, casualties or
+          official loss.
         </p>
       </article>
 
       <article>
         <span>04</span>
+
         <h2
           data-en="Satellite workflow readiness"
           data-tr="Uydu iş akışı hazırlığı"
-        >Satellite workflow readiness</h2>
+        >
+          Satellite workflow readiness
+        </h2>
 
         <p
           data-en="Sentinel-1 STAC discovery, orbit metadata, same-orbit pair planning and exploration of validated, processed InSAR displacement points."
@@ -294,10 +522,13 @@
 
       <article>
         <span>05</span>
+
         <h2
           data-en="Reproducible engineering"
           data-tr="Tekrar üretilebilir mühendislik"
-        >Reproducible engineering</h2>
+        >
+          Reproducible engineering
+        </h2>
 
         <p
           data-en="Deterministic demo data, automated tests, CI, release validation, documented methods and citation-ready research metadata."
@@ -310,28 +541,37 @@
 
       <article>
         <span>06</span>
+
         <h2
           data-en="Responsible design"
           data-tr="Sorumlu tasarım"
-        >Responsible design</h2>
+        >
+          Responsible design
+        </h2>
 
         <p
           data-en="No deterministic earthquake prediction, no early warning, no building certification and no official damage or loss estimation."
           data-tr="Kesin deprem tahmini, erken uyarı, bina sertifikasyonu veya resmî hasar ve kayıp tahmini yapılmaz."
         >
-          No deterministic earthquake prediction, no early warning, no building
-          certification and no official damage or loss estimation.
+          No deterministic earthquake prediction, no early warning, no
+          building certification and no official damage or loss estimation.
         </p>
       </article>
+
     </section>
 
+    <!-- Live reporting -->
     <section class="wrap architecture">
+
       <div>
+
         <p
           class="eyebrow"
           data-en="LIVE ONLINE REPORTING"
           data-tr="CANLI ÇEVRİM İÇİ RAPORLAMA"
-        >LIVE ONLINE REPORTING</p>
+        >
+          LIVE ONLINE REPORTING
+        </p>
 
         <h2
           data-en="From official catalogue records to transparent analytical evidence"
@@ -344,32 +584,74 @@
           data-en="The hosted application retrieves recent official USGS records for Türkiye and converts them into maps, metrics, distributions, statistical screens, quality reports and downloadable data."
           data-tr="Yayındaki uygulama Türkiye için güncel resmî USGS kayıtlarını alır; bu kayıtları haritalara, göstergelere, dağılımlara, istatistiksel taramalara, kalite raporlarına ve indirilebilir verilere dönüştürür."
         >
-          The hosted application retrieves recent official USGS records for Türkiye
-          and converts them into maps, metrics, distributions, statistical screens,
-          quality reports and downloadable data.
+          The hosted application retrieves recent official USGS records for
+          Türkiye and converts them into maps, metrics, distributions,
+          statistical screens, quality reports and downloadable data.
         </p>
+
       </div>
 
       <div class="flow">
-        <b data-en="USGS catalogue" data-tr="USGS kataloğu">USGS catalogue</b>
+
+        <b
+          data-en="USGS catalogue"
+          data-tr="USGS kataloğu"
+        >
+          USGS catalogue
+        </b>
+
         <i>→</i>
-        <b data-en="Validation" data-tr="Doğrulama">Validation</b>
+
+        <b
+          data-en="Validation"
+          data-tr="Doğrulama"
+        >
+          Validation
+        </b>
+
         <i>→</i>
-        <b data-en="Analytics" data-tr="Analitik">Analytics</b>
+
+        <b
+          data-en="Analytics"
+          data-tr="Analitik"
+        >
+          Analytics
+        </b>
+
         <i>→</i>
-        <b data-en="Maps and metrics" data-tr="Haritalar ve göstergeler">Maps and metrics</b>
+
+        <b
+          data-en="Maps and metrics"
+          data-tr="Haritalar ve göstergeler"
+        >
+          Maps and metrics
+        </b>
+
         <i>→</i>
-        <b data-en="Downloadable reporting" data-tr="İndirilebilir raporlama">Downloadable reporting</b>
+
+        <b
+          data-en="Downloadable reporting"
+          data-tr="İndirilebilir raporlama"
+        >
+          Downloadable reporting
+        </b>
+
       </div>
+
     </section>
 
+    <!-- Reporting features -->
     <section class="wrap grid features">
+
       <article>
         <span>A</span>
+
         <h2
           data-en="Event summary"
           data-tr="Olay özeti"
-        >Event summary</h2>
+        >
+          Event summary
+        </h2>
 
         <p
           data-en="Event count, maximum magnitude, median depth, shallow-event share, b-value and latest available timestamp."
@@ -382,10 +664,13 @@
 
       <article>
         <span>B</span>
+
         <h2
           data-en="Interactive event map"
           data-tr="Etkileşimli olay haritası"
-        >Interactive event map</h2>
+        >
+          Interactive event map
+        </h2>
 
         <p
           data-en="Magnitude-scaled earthquake points with depth, source, timestamp, location and exploratory cluster information."
@@ -398,10 +683,13 @@
 
       <article>
         <span>C</span>
+
         <h2
           data-en="Time and distribution analysis"
           data-tr="Zaman ve dağılım analizi"
-        >Time and distribution analysis</h2>
+        >
+          Time and distribution analysis
+        </h2>
 
         <p
           data-en="Daily event counts, magnitude through time, magnitude histograms and magnitude–depth relationships."
@@ -414,10 +702,13 @@
 
       <article>
         <span>D</span>
+
         <h2
           data-en="Anomaly screening"
           data-tr="Anomali taraması"
-        >Anomaly screening</h2>
+        >
+          Anomaly screening
+        </h2>
 
         <p
           data-en="Rolling event-rate baselines identify statistical deviations in the loaded catalogue without making predictive claims."
@@ -430,10 +721,13 @@
 
       <article>
         <span>E</span>
+
         <h2
           data-en="Data-quality reporting"
           data-tr="Veri kalite raporlaması"
-        >Data-quality reporting</h2>
+        >
+          Data-quality reporting
+        </h2>
 
         <p
           data-en="Missing values, duplicate records, coordinate ranges, timestamp coverage and source transparency remain visible."
@@ -446,10 +740,13 @@
 
       <article>
         <span>F</span>
+
         <h2
           data-en="Research-ready exports"
           data-tr="Araştırma uyumlu çıktılar"
-        >Research-ready exports</h2>
+        >
+          Research-ready exports
+        </h2>
 
         <p
           data-en="Filtered catalogue downloads and reusable outputs support scientific Python, GIS, Power BI, Tableau and further analysis."
@@ -459,15 +756,21 @@
           Python, GIS, Power BI, Tableau and further analysis.
         </p>
       </article>
+
     </section>
 
+    <!-- Data modes -->
     <section class="wrap architecture">
+
       <div>
+
         <p
           class="eyebrow"
           data-en="THREE DATA MODES"
           data-tr="ÜÇ VERİ MODU"
-        >THREE DATA MODES</p>
+        >
+          THREE DATA MODES
+        </p>
 
         <h2
           data-en="Run immediately, connect to live data or analyse your own catalogue"
@@ -475,102 +778,246 @@
         >
           Run immediately, connect to live data or analyse your own catalogue
         </h2>
+
       </div>
 
       <div class="flow">
-        <b data-en="Reproducible demo" data-tr="Tekrar üretilebilir demo">Reproducible demo</b>
+
+        <b
+          data-en="Reproducible demo"
+          data-tr="Tekrar üretilebilir demo"
+        >
+          Reproducible demo
+        </b>
+
         <i>•</i>
-        <b data-en="Live USGS" data-tr="Canlı USGS">Live USGS</b>
+
+        <b
+          data-en="Live USGS"
+          data-tr="Canlı USGS"
+        >
+          Live USGS
+        </b>
+
         <i>•</i>
-        <b data-en="Local CSV / Excel" data-tr="Yerel CSV / Excel">Local CSV / Excel</b>
+
+        <b
+          data-en="Local CSV / Excel"
+          data-tr="Yerel CSV / Excel"
+        >
+          Local CSV / Excel
+        </b>
+
       </div>
+
     </section>
 
-    <section class="wrap author" id="author">
+    <!-- Citation section -->
+    <section class="wrap citation-section">
+
+      <div>
+
+        <p
+          class="eyebrow"
+          data-en="CITATION & PRESERVATION"
+          data-tr="ATIF VE ARŞİVLEME"
+        >
+          CITATION &amp; PRESERVATION
+        </p>
+
+        <h2
+          data-en="Cite DepremNabız AI"
+          data-tr="DepremNabız AI'a Atıf Yapın"
+        >
+          Cite DepremNabız AI
+        </h2>
+
+        <p
+          data-en="Use the Zenodo DOI when referring to version 1.0.0 of the research software."
+          data-tr="Araştırma yazılımının 1.0.0 sürümüne atıf yaparken Zenodo DOI'sini kullanın."
+        >
+          Use the Zenodo DOI when referring to version 1.0.0 of the
+          research software.
+        </p>
+
+      </div>
+
+      <div class="citation-box">
+
+        <strong>Faramarz Kowsari</strong>
+
+        <p>
+          Türkiye Seismic Intelligence &amp; Resilience Platform
+          (DepremNabız AI), Version 1.0.0.
+        </p>
+
+        <a
+          href="https://doi.org/10.5281/zenodo.21797833"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://doi.org/10.5281/zenodo.21797833
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- Author -->
+    <section
+      class="wrap author"
+      id="author"
+    >
+
       <img
         src="https://avatars.githubusercontent.com/u/105053743?v=4&s=512"
         alt="Faramarz Kowsari"
       >
 
       <div>
+
         <p
           class="eyebrow"
           data-en="AUTHOR & MAINTAINER"
           data-tr="YAZAR VE PROJE YÖNETİCİSİ"
-        >AUTHOR &amp; MAINTAINER</p>
+        >
+          AUTHOR &amp; MAINTAINER
+        </p>
 
-        <h2>Faramarz Kowsari</h2>
+        <h2>
+          Faramarz Kowsari
+        </h2>
 
         <p
           data-en="Faramarz Kowsari is an author, Software Engineer and AI researcher based in Istanbul. Focusing on the intersection of technology, education, and personal growth, he has published over 80 digital titles on international platforms. His work includes Artificial Intelligence, prompt engineering, modern trading strategies, classical literature, mindfulness, web-based educational tools and specialised instructional content."
           data-tr="Faramarz Kowsari, İstanbul merkezli bir yazar, Yazılım Mühendisi ve Yapay Zekâ araştırmacısıdır. Teknoloji, eğitim ve kişisel gelişimin kesişimine odaklanarak uluslararası platformlarda 80'den fazla dijital eser yayımlamıştır. Çalışmaları Yapay Zekâ, prompt mühendisliği, modern işlem stratejileri, klasik edebiyat, farkındalık, web tabanlı eğitim araçları ve uzmanlaşmış öğretim içeriklerini kapsar."
         >
-          Faramarz Kowsari is an author, Software Engineer and AI researcher based
-          in Istanbul. Focusing on the intersection of technology, education, and
-          personal growth, he has published over 80 digital titles on international
-          platforms. His work includes Artificial Intelligence, prompt engineering,
-          modern trading strategies, classical literature, mindfulness, web-based
-          educational tools and specialised instructional content.
+          Faramarz Kowsari is an author, Software Engineer and AI researcher
+          based in Istanbul. Focusing on the intersection of technology,
+          education, and personal growth, he has published over 80 digital
+          titles on international platforms. His work includes Artificial
+          Intelligence, prompt engineering, modern trading strategies,
+          classical literature, mindfulness, web-based educational tools and
+          specialised instructional content.
         </p>
 
         <p class="profile-links">
+
           <a
             href="https://orcid.org/0000-0003-1692-0453"
             target="_blank"
             rel="noopener"
-          >ORCID</a>
+          >
+            ORCID
+          </a>
+
           ·
+
           <a
             href="https://scholar.google.com/citations?user=G7tP5WMAAAAJ&hl=en"
             target="_blank"
             rel="noopener"
-          >Google Scholar</a>
+          >
+            Google Scholar
+          </a>
+
           ·
+
           <a
             href="https://github.com/FaramarzKowsari"
             target="_blank"
             rel="noopener"
-          >GitHub</a>
+          >
+            GitHub
+          </a>
+
           ·
+
           <a
             href="https://www.linkedin.com/in/faramarzkowsari"
             target="_blank"
             rel="noopener"
-          >LinkedIn</a>
+          >
+            LinkedIn
+          </a>
+
           ·
+
           <a
             href="https://play.google.com/store/search?q=Faramarz_Kowsari&c=books"
             target="_blank"
             rel="noopener"
-          >Google Books</a>
+          >
+            Google Books
+          </a>
+
           ·
+
           <a
             href="https://faramarzkowsari.github.io"
             target="_blank"
             rel="noopener"
-          >Official Website</a>
+          >
+            Official Website
+          </a>
+
           ·
+
           <a
             href="https://zenodo.org/search?q=creators.orcid%3A%220000-0003-1692-0453%22&l=list&p=1&s=10&sort=bestmatch"
             target="_blank"
             rel="noopener"
-          >Zenodo Records</a>
+          >
+            Zenodo Records
+          </a>
+
         </p>
+
       </div>
+
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer>
-    <div
-      class="wrap"
-      data-en="MIT-licensed source code · External data remains subject to provider terms · Research analytics only · No earthquake prediction or official early warning"
-      data-tr="MIT lisanslı kaynak kodu · Haricî veriler sağlayıcı koşullarına tabidir · Yalnızca araştırma analitiği · Deprem tahmini veya resmî erken uyarı değildir"
-    >
-      MIT-licensed source code · External data remains subject to provider terms ·
-      Research analytics only · No earthquake prediction or official early warning
+
+    <div class="wrap footer-grid">
+
+      <div>
+
+        <div
+          data-en="MIT-licensed source code · External data remains subject to provider terms · Research analytics only · No earthquake prediction or official early warning"
+          data-tr="MIT lisanslı kaynak kodu · Haricî veriler sağlayıcı koşullarına tabidir · Yalnızca araştırma analitiği · Deprem tahmini veya resmî erken uyarı değildir"
+        >
+          MIT-licensed source code · External data remains subject to provider
+          terms · Research analytics only · No earthquake prediction or
+          official early warning
+        </div>
+
+      </div>
+
+      <div class="footer-doi">
+
+        <span>
+          DOI
+        </span>
+
+        <a
+          href="https://doi.org/10.5281/zenodo.21797833"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          10.5281/zenodo.21797833
+        </a>
+
+      </div>
+
     </div>
+
   </footer>
 
   <script src="assets/app.js"></script>
+
 </body>
 </html>
